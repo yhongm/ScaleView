@@ -75,7 +75,7 @@ public class ArcScaleView extends View {
         mScaleSpace = typedArray.getInt(R.styleable.ArcScaleView_scaleSpace, 1);
         mScaleMin = typedArray.getInt(R.styleable.ArcScaleView_scaleMin, 30);
         mDrawLineSpace = typedArray.getInt(R.styleable.ArcScaleView_drawLineSpace, 1);
-        mDrawTextSpace = typedArray.getInt(R.styleable.ArcScaleView_drawLineSpace, 5);
+        mDrawTextSpace = typedArray.getInt(R.styleable.ArcScaleView_drawTextSpace, 5);
 
         mArcLineColor = typedArray.getColor(R.styleable.ArcScaleView_arcLineColor, Color.RED);
         mScaleLineColor = typedArray.getColor(R.styleable.ArcScaleView_scaleLineColor, Color.RED);
@@ -232,7 +232,7 @@ public class ArcScaleView extends View {
                 if (scale % mDrawTextSpace == 0) {
                     endX = pos[0] + 80;
                     mScaleLinePaint.setStrokeWidth(15);
-                    mScaleLinePaint.setColor(Color.RED);
+                    mScaleLinePaint.setColor(mScaleLineColor);
                     if (currentAngle >= (-(mScaleNumber / 2) * mScaleSpace)) {
                         canvas.save();
                         canvas.rotate((float) (angle + 90), pos[0], pos[1]);
@@ -242,7 +242,7 @@ public class ArcScaleView extends View {
                         canvas.restore();
                     }
                 } else if (scale % mDrawLineSpace == 0) {
-                    mScaleLinePaint.setColor(Color.YELLOW);
+                    mScaleLinePaint.setColor(mScaleTextColor);
                     mScaleLinePaint.setStrokeWidth(10);
                     endX = pos[0] + 50;
                 }

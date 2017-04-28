@@ -10,7 +10,19 @@
         android:id="@+id/arc_scaleview"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        app:arcLineColor="#ff0000"
+        app:drawLineSpace="1"
+        app:drawTextSpace="5"
+        app:everyScaleValue="1"
+        app:indicatorColor="#1cffaf"
+        app:scaleLineColor="#0000ff"
+        app:scaleMin="200"
+        app:scaleNum="30"
+        app:scaleSpace="1"
+        app:scaleTextColor="#0000ff"
+        app:scaleUnit="单位"
+        app:selectTextColor="#111111" />
 
     <TextView
         android:id="@+id/tv_output_value"
