@@ -1,6 +1,6 @@
 # ArcScaleView »¡ÐÎ³ß¶ÈÑ¡ÔñÆ÷
 ## Ô¤ÀÀ
-<img src="/preview/demo.gif width=400,height=800">
+<img src="/preview/demo.gif">
 
 
 
