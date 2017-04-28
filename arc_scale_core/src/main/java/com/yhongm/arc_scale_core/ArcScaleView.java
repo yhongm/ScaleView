@@ -90,17 +90,17 @@ public class ArcScaleView extends View {
         mArcPaint.setStyle(Paint.Style.STROKE);
         mArcPaint.setStrokeWidth(18);
 
-        mScaleLinePaint = new Paint();
+        mScaleLinePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mScaleLinePaint.setColor(mScaleLineColor);
         mScaleLinePaint.setStrokeCap(Paint.Cap.ROUND);
         mScaleLinePaint.setStyle(Paint.Style.STROKE);
 
-        mScaleTextPaint = new TextPaint();
+        mScaleTextPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
         mScaleTextPaint.setColor(mScaleTextColor);
         mScaleTextPaint.setTypeface(Typeface.SANS_SERIF);
         mScaleTextPaint.setTextSize(20);
 
-        mSelectedTextPaint = new TextPaint();
+        mSelectedTextPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
         mSelectedTextPaint.setTypeface(Typeface.SERIF);
         mSelectedTextPaint.setColor(mSelectTextColor);
         mSelectedTextPaint.setTextSize(50);
