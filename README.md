@@ -1,6 +1,7 @@
 # ArcScaleView 弧形尺度选择器
 ## 预览
 <img src="/preview/demo.gif">
+</br>
 ## 使用方法:布局文件添加以下属性
 ###        app:arcLineColor="#ff0000" 弧线颜色
 ###        app:drawLineSpace="1" 刻度线间距
