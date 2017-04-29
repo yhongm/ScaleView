@@ -7,7 +7,8 @@
 
 
 
-## 使用方法:布局文件添加以下属性
+## 使用方法:
+## 1，布局文件添加以下属性
  ### app:arcLineColor="#ff0000" 弧线颜色
  ### app:drawLineSpace="1" 刻度线间距
  ### app:drawTextSpace="5" 刻度值间隔
@@ -20,3 +21,5 @@
  ### app:scaleTextColor="#0000ff" 刻度值颜色
  ### app:scaleUnit="单位" 刻度单位
  ### app:selectTextColor="#111111" 选中值颜色
+
+## 2，实现setSelectScaleListener监听刻度值变化
