@@ -1,5 +1,5 @@
-# ArcScaleView »¡ĞÎ³ß¶ÈÑ¡ÔñÆ÷
-## Ô¤ÀÀ
+# ArcScaleView å¼§å½¢å°ºåº¦é€‰æ‹©å™¨
+## é¢„è§ˆ
 <img src="/preview/demo.gif">
 
 
@@ -7,19 +7,33 @@
 
 
 
-## Ê¹ÓÃ·½·¨:
-## 1£¬²¼¾ÖÎÄ¼şÌí¼ÓÒÔÏÂÊôĞÔ
- ### app:arcLineColor="#ff0000" »¡ÏßÑÕÉ«
- ### app:drawLineSpace="1" ¿Ì¶ÈÏß¼ä¾à
- ### app:drawTextSpace="5" ¿Ì¶ÈÖµ¼ä¸ô
- ### app:everyScaleValue="1" »¬¶¯ÏñËØÓë¿Ì¶ÈÖµµÄ±ÈÀı
- ### app:indicatorColor="#1cffaf" ÖĞ¼äÖ¸Ê¾Æ÷ÑÕÉ«
- ### app:scaleLineColor="#0000ff" ¿Ì¶ÈÏßÑÕÉ«
- ### app:scaleMin="200" Ñ¡ÔñÆ÷×îĞ¡Öµ
- ### app:scaleNum="30" ¿Ì¶ÈÊıÁ¿
- ### app:scaleSpace="1" ¿Ì¶È¼ä¾à
- ### app:scaleTextColor="#0000ff" ¿Ì¶ÈÖµÑÕÉ«
- ### app:scaleUnit="µ¥Î»" ¿Ì¶Èµ¥Î»
- ### app:selectTextColor="#111111" Ñ¡ÖĞÖµÑÕÉ«
+## ä½¿ç”¨æ–¹æ³•:
+## Step 1. Add the JitPack repository to your build file 
+## Add it in your root build.gradle at the end of repositories:
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+## Step 2. Add the dependency
+ 	dependencies {
+	        compile 'com.github.yhongm:ArcScaleView:-SNAPSHOT'
+	}
 
-## 2£¬ÊµÏÖsetSelectScaleListener¼àÌı¿Ì¶ÈÖµ±ä»¯
+ 
+## 1ï¼Œå¸ƒå±€æ–‡ä»¶æ·»åŠ ä»¥ä¸‹å±æ€§
+ ### app:arcLineColor="#ff0000" å¼§çº¿é¢œè‰²
+ ### app:drawLineSpace="1" åˆ»åº¦çº¿é—´è·
+ ### app:drawTextSpace="5" åˆ»åº¦å€¼é—´éš”
+ ### app:everyScaleValue="1" æ»‘åŠ¨åƒç´ ä¸åˆ»åº¦å€¼çš„æ¯”ä¾‹
+ ### app:indicatorColor="#1cffaf" ä¸­é—´æŒ‡ç¤ºå™¨é¢œè‰²
+ ### app:scaleLineColor="#0000ff" åˆ»åº¦çº¿é¢œè‰²
+ ### app:scaleMin="200" é€‰æ‹©å™¨æœ€å°å€¼
+ ### app:scaleNum="30" åˆ»åº¦æ•°é‡
+ ### app:scaleSpace="1" åˆ»åº¦é—´è·
+ ### app:scaleTextColor="#0000ff" åˆ»åº¦å€¼é¢œè‰²
+ ### app:scaleUnit="å•ä½" åˆ»åº¦å•ä½
+ ### app:selectTextColor="#111111" é€‰ä¸­å€¼é¢œè‰²
+
+## 2ï¼Œå®ç°setSelectScaleListenerç›‘å¬åˆ»åº¦å€¼å˜åŒ–
