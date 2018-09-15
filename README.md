@@ -1,9 +1,13 @@
 # ScaleView 选择器:包括弧形刻度尺选择器和直线型刻度尺选择器
 ## 预览 弧形刻度尺选择器
-<img src="/preview/demo.gif">
-<br/>
+<img src="/preview/demo.gif"/>
+
+
+
+
+
 ## 预览 直尺刻度尺选择器
-<img src="/preview/demo_scale_line.gif">
+<img src="/preview/demo_scale_line.gif"/>
 
 
 
