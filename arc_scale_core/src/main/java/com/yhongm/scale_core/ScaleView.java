@@ -197,7 +197,7 @@ public class ScaleView extends View {
             drawIndicator(canvas);
             drawMask(canvas);
         } else {
-            //绘制直线刻度尺选择器
+            //绘制直尺刻度尺选择器
             drawCurrentScale(canvas);
 
             drawNum(canvas);
@@ -376,6 +376,10 @@ public class ScaleView extends View {
      * @param canvas
      */
     private void drawCurrentScale(Canvas canvas) {
+        currentValue = (-totalX + mCenterX) / eachScalePix + mScaleMin;
+        if (selectScaleListener != null) {
+            selectScaleListener.selectScale(currentValue);
+        }
         RectF roundRectF = new RectF();
         roundRectF.left = mCenterX - 3;
         roundRectF.right = mCenterX + 3;
@@ -451,10 +455,7 @@ public class ScaleView extends View {
                         }
                     }
                     mDownX = (int) event.getX();
-                    currentValue = (-totalX + mCenterX) / eachScalePix + mScaleMin;
-                    if (selectScaleListener != null) {
-                        selectScaleListener.selectScale(currentValue);
-                    }
+
                 }
 
                 break;

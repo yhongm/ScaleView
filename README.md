@@ -24,6 +24,7 @@
 
  
 ## 1，布局文件添加以下属性
+ ### app:shape="arc" arc为弧形，line为直尺形
  ### app:arcLineColor="#ff0000" 弧线颜色
  ### app:drawLineSpace="1" 刻度线间距
  ### app:drawTextSpace="5" 刻度值间隔
