@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.yhongm.arc_scale_view.MainActivity">
 
-    <com.yhongm.arc_scale_core.ArcScaleView
+    <com.yhongm.scale_core.ScaleView
         android:id="@+id/arc_scaleview"
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -19,10 +19,11 @@
         app:scaleLineColor="#0000ff"
         app:scaleMin="200"
         app:scaleNum="30"
+        app:shape="arc"
         app:scaleSpace="1"
         app:scaleTextColor="#0000ff"
         app:scaleUnit="单位"
-        app:selectTextColor="#111111" />
+        app:selectTextColor="#1fffff" />
 
     <TextView
         android:id="@+id/tv_output_value"

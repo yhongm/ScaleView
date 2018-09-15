@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="ArcScaleView">
+    <declare-styleable name="ScaleView">
+        <attr name="shape" format="enum">
+            <!--弧形-->
+            <enum name="arc" value="0"></enum>
+            <!--直尺形-->
+            <enum name="line" value="1"></enum>
+        </attr>
         <!--刻度单位-->
         <attr name="scaleUnit" format="string"></attr>
         <!--滑动度数和选择器值增加的比例-->
         <attr name="everyScaleValue" format="float"></attr>
-        <!--刻度数量-->
+        <!--屏幕内可见刻度线数量-->
         <attr name="scaleNum" format="integer"></attr>
         <!--刻度间距-->
         <attr name="scaleSpace" format="integer"></attr>
@@ -25,6 +31,11 @@
         <attr name="scaleTextColor" format="color"></attr>
         <!--选中刻度文字颜色-->
         <attr name="selectTextColor" format="color"></attr>
-     
+
+        <!--直线刻度尺选择器最大长度-->
+        <attr name="scaleMaxLength" format="integer"></attr>
+
+
     </declare-styleable>
+
 </resources>

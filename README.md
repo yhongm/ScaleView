@@ -1,6 +1,7 @@
 # ArcScaleView 弧形尺度选择器
 ## 预览
 <img src="/preview/demo.gif">
+<img src="/preview/demo_scale_line.gif">
 
 
 

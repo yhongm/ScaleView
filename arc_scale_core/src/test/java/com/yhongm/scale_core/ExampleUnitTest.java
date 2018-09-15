@@ -1,4 +1,4 @@
-package com.yhongm.arc_scale_core;
+package com.yhongm.scale_core;
 
 import org.junit.Test;
 
