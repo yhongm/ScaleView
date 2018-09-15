@@ -25,11 +25,12 @@
 		}
 	}
 ## Step 2. Add the dependency
- 	<code>
+
+<code>
  	dependencies {
         	        implementation 'com.github.yhongm:ArcScaleView:-40ab7f3b87-1'
         	}
- 	</code>
+</code>
 
  
 ## 1，布局文件添加以下属性
