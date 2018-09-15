@@ -5,7 +5,7 @@
 
 
 
-  
+
 
 ## 预览 直尺刻度尺选择器
 <img src="/preview/demo_scale_line.gif"/>
@@ -25,9 +25,11 @@
 		}
 	}
 ## Step 2. Add the dependency
+ 	<code>
  	dependencies {
-	        compile 'com.github.yhongm:ArcScaleView:-SNAPSHOT'
-	}
+        	        implementation 'com.github.yhongm:ArcScaleView:-40ab7f3b87-1'
+        	}
+ 	</code>
 
  
 ## 1，布局文件添加以下属性
