@@ -18,23 +18,23 @@
 ## 使用方法:
 ## Step 1. Add the JitPack repository to your build file 
 ## Add it in your root build.gradle at the end of repositories:
-<code>
+```
 	allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
-</code>
+```
 
 
 ## Step 2. Add the dependency
 
-<code>
+```
  	dependencies {
         	        implementation 'com.github.yhongm:ArcScaleView:-40ab7f3b87-1'
         	}
-</code>
+```
 
  
 ## 1，布局文件添加以下属性
