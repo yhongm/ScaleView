@@ -37,7 +37,28 @@
 ```
 
  
-## 1，布局文件添加以下属性
+## 1，布局文件添加
+```
+      <com.yhongm.scale_core.ScaleView
+        android:id="@+id/arc_scaleview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:arcLineColor="#ff0000"
+        app:drawLineSpace="1"
+        app:drawTextSpace="5"
+        app:everyScaleValue="1"
+        app:indicatorColor="#1cffaf"
+        app:scaleLineColor="#0000ff"
+        app:scaleMin="200"
+        app:scaleNum="30"
+        app:shape="arc"
+        app:scaleSpace="1"
+        app:scaleTextColor="#0000ff"
+        app:scaleUnit="单位"
+        app:selectTextColor="#1fffff" />
+```
+## 2,说明
  ### app:shape="arc" arc为弧形，line为直尺形
  ### app:arcLineColor="#ff0000" 弧线颜色
  ### app:drawLineSpace="1" 刻度线间距
