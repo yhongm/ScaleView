@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ArcScaleView.iml" filepath="$PROJECT_DIR$/ArcScaleView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ScaleView.iml" filepath="$PROJECT_DIR$/ScaleView.iml" />
       <module fileurl="file://$PROJECT_DIR$/arc_scale_core/arc_scale_core.iml" filepath="$PROJECT_DIR$/arc_scale_core/arc_scale_core.iml" />
       <module fileurl="file://$PROJECT_DIR$/arc_scale_demo/arc_scale_demo.iml" filepath="$PROJECT_DIR$/arc_scale_demo/arc_scale_demo.iml" />
     </modules>
