@@ -31,7 +31,7 @@
 ## Step 2. Add the dependency
 
 ```
- 	dependencies {
+ 	        dependencies {
         	        implementation 'com.github.yhongm:ScaleView:master'
         	}
 ```
