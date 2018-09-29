@@ -32,7 +32,7 @@
 
 ```
  	dependencies {
-        	        implementation 'com.github.yhongm:ArcScaleView:-40ab7f3b87-1'
+        	        implementation 'com.github.yhongm:ScaleView:master'
         	}
 ```
 
