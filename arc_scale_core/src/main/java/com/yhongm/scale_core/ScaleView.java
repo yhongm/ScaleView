@@ -434,26 +434,49 @@ public class ScaleView extends View {
                 } else {
                     mSlidingMoveX = (int) (event.getX() - mDownX);//滑动距离
                     totalX = totalX + mSlidingMoveX;
-                    if (mSlidingMoveX < 0) {
-                        //向左滑动,刻度值增大
-                        if (-totalX + mCenterX > mScaleMaxLength * eachScalePix) {
-                            //向左滑动如果刻度值大于最大值，则不能滑动了
-                            totalX = totalX - mSlidingMoveX;
-                            return true;
-                        } else {
-                            invalidate();
-                        }
-                    } else {
-                        //向右滑动，刻度值减小
-//                    向右滑动刻度值小于最小值则不能滑动了
-                        if (totalX - mCenterX > 0) {
-                            totalX = totalX - mSlidingMoveX;
-                            return true;
-                        } else {
-                            invalidate();
+//                     if (mSlidingMoveX < 0) {
+//                         //向左滑动,刻度值增大
+//                         if (-totalX + mCenterX > mScaleMaxLength * eachScalePix) {
+//                             //向左滑动如果刻度值大于最大值，则不能滑动了
+//                             totalX = totalX - mSlidingMoveX;
+//                             return true;
+//                         } else {
+//                             invalidate();
+//                         }
+//                     } else {
+//                         //向右滑动，刻度值减小
+// //                    向右滑动刻度值小于最小值则不能滑动了
+//                         if (totalX - mCenterX > 0) {
+//                             totalX = totalX - mSlidingMoveX;
+//                             return true;
+//                         } else {
+//                             invalidate();
 
-                        }
-                    }
+//                         }
+//                     }
+                    // fix g19980115建议解决滑动边界问题  see issue https://github.com/yhongm/ScaleView/issues/1
+                    //向左滑动,刻度值增大
+                    if (mSlidingMoveX < 0) {
+         
+                          if (-totalX + mCenterX > mScaleMaxLength * eachScalePix) {
+                           //向左滑动如果刻度值大于最大值，则不能滑动了
+                               totalX = -mScaleMaxLength * eachScalePix + mCenterX;
+                               invalidate();
+                               return true;
+                          } else {
+                               invalidate();
+                    
+                    } else {
+                           //向右滑动，刻度值减小
+                           //向右滑动刻度值小于最小值则不能滑动了
+                           if (totalX - mCenterX > 0) {
+                               totalX = mCenterX;
+                               invalidate();
+                               return true;
+                           } else {
+                              invalidate();
+                           }
+                   }
                     mDownX = (int) event.getX();
 
                 }
